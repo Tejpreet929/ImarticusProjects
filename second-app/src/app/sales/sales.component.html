@@ -1,0 +1,29 @@
+{{name}}
+
+{{product.pid}}
+<br>
+{{product.pname}}
+<br>
+{{product.psal}}
+<br>
+{{dbsUser.id}}
+<br>
+{{dbsUser.name}}
+<br>
+{{dbsUser.email}}
+<br>
+<table class="table">
+    <thead>
+      <tr *ngIf="sales.length>0">
+         <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let sale of sales">
+          <td>{{sale.eid}}</td>
+          <td>{{sale.ename}}</td>
+          <td>{{sale.esal}}</td>
+        </tr>
+    </tbody>
