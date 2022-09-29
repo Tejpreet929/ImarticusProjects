@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let eachRec of htmlData">
+        <th scope="row">1</th>
+        <td>{{eachRec.isbn}}</td>
+        <td>{{eachRec.title}}</td>
+        <td>{{eachRec.author}}</td>
+        <td>{{eachRec.price}}</td>
+        <td><button type="button" (click)="getData"></button></button></td>
+      </tr>
+         </tbody>
+  </table>
